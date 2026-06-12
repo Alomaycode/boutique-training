@@ -28,7 +28,7 @@
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-2">
                         <li class="nav-item">
-                            <RouterLink class="nav-link" exact-active-class="active" to="/#accueil">Accueil</RouterLink>
+                            <RouterLink class="nav-link" exact-active-class="active" to="/">Accueil</RouterLink>
                         </li>
                         <li class="nav-item">
                             <RouterLink class="nav-link" exact-active-class="active" to="/#promotions">Promotions</RouterLink>
