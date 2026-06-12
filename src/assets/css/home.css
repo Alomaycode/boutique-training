@@ -137,7 +137,7 @@
   align-items: flex-end;
   justify-content: space-between;
   gap: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .category-filter-header h2 {
@@ -156,43 +156,57 @@
 .category-filter-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
 }
 
 .category-filter-btn {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  min-height: 46px;
-  padding: 10px 14px;
-  color: var(--text-muted);
+  gap: 12px;
+  min-height: 48px;
+  padding: 10px 12px 10px 16px;
+  color: var(--text-main);
   font-weight: 900;
-  border: 1px solid var(--nav-border);
+  cursor: pointer;
+  border: 1px solid rgba(148, 163, 184, 0.28);
   border-radius: 999px;
-  background: #ffffff;
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
-  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .category-filter-btn span {
   text-transform: capitalize;
+  white-space: nowrap;
 }
 
 .category-filter-btn strong {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 26px;
-  height: 26px;
+  min-width: 28px;
+  height: 28px;
   padding: 0 8px;
   color: var(--accent);
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   border-radius: 999px;
   background: rgba(37, 99, 235, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.06);
 }
 
-.category-filter-btn:hover,
-.category-filter-btn:focus,
+.category-filter-btn:hover {
+  color: var(--accent-dark);
+  border-color: rgba(37, 99, 235, 0.28);
+  background: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.09);
+}
+
+.category-filter-btn:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.18);
+  outline-offset: 3px;
+}
+
 .category-filter-btn.active {
   color: #ffffff;
   border-color: transparent;
@@ -201,11 +215,15 @@
   box-shadow: 0 16px 32px rgba(37, 99, 235, 0.22);
 }
 
-.category-filter-btn:hover strong,
-.category-filter-btn:focus strong,
+.category-filter-btn:hover strong {
+  color: var(--accent-dark);
+  background: rgba(37, 99, 235, 0.12);
+}
+
 .category-filter-btn.active strong {
   color: var(--accent-dark);
   background: #ffffff;
+  box-shadow: none;
 }
 
 .products-pagination {
